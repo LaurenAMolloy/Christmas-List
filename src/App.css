@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Playwrite+DE+Grund+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+:root {
+  font-family: "Raleway", sans-serif;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+}
+
+input {
+  font-family: inherit;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  padding: 2rem 0;
+  border-radius: 1rem;
+}
+
+.wishForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  width: 70%
+}
+
+label {
+  font-weight: 700;
+}
