@@ -12,7 +12,7 @@ function App() {
 return (
   <>
   <CreateWish setWishes={setWishes}  wish={wishes} setWish={setWishes} />
-  <WishList  />
+  <WishList wishes={wishes}  />
   </>
 )
 

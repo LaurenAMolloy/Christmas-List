@@ -22,12 +22,18 @@ function CreateWish( {setWishes} ) {
     setWishes({
       ...wish
     })
+    //Reset wish values after submission
+    setWish({
+      wishName:"",
+      wishPrice: "",
+      wishLink: "",
+    })
   }
 
   return (
     <>
     <div className="form-container">
-    <h4>Enter Your Christmas Wishes on the Form Below</h4>
+    <h4>Enter Your Christmas Wishes</h4>
     <form className="wishForm" onSubmit={handleSubmit}>
       <label htmlFor="wishName">Wish</label>
       <input
