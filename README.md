@@ -39,7 +39,7 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./app-preview.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
