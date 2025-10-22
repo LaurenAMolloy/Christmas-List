@@ -1,6 +1,6 @@
 # Christmas List
 > This is a cute CRUD app designed to keep track of christmas gifts and wishes.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://christmas-list-jndl.onrender.com/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -17,10 +17,9 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- The problem this app solves is to make christmas shopping a little easier.
-- The purpose is to store a list of gifts that your loved one would like to recieve.
-- I undertook this project to help me keep track of gifts to buy my daughters 
+- The problem this app solves is to make the task of christmas shopping a little easier.
+- The purpose is to store a list of gifts that your loved one would like to receive.
+- I undertook this project to help me keep track of gifts to buy this christmas. 
 
 
 ## Technologies Used
@@ -36,6 +35,7 @@
 - Awesome feature 3 - Edit gifts
 - Awesome feature 4 - Sort gifts according to price
 - Awesome feature 5 - Total gifts
+- Awesome feature 6 - Tag and Filter purchased gifts
 
 
 ## Screenshots
