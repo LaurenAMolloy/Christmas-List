@@ -49,4 +49,36 @@ button {
   border: none;
   background-color: #d90429;
   color: #d5f2e3;
+  transition: ease-in 1s;
 }
+
+button:hover {
+  background-color: #18300f;
+  transform: translateY(-8px);
+}
+
+.wishlistItems {
+  border: 2px solid red;
+  background-color: #d90429;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+}
+
+.wishCard {
+  background-color: white;
+  color: #18300f;
+  width: 40%;
+  border-radius: 1rem;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding: 1rem;
+}
+
+.edit {
+  background-color: #18300f;
+  color: #d5f2e3;
+}
+
+.delete {}

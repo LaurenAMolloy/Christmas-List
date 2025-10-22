@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 
-function CreateWish( {setWishes} ) {
+function CreateWish( { wishCreate } ) {
   //Empty Object to create wish
   const [wish, setWish] = useState({})
 
@@ -18,10 +18,8 @@ function CreateWish( {setWishes} ) {
   const handleSubmit = (e) => {
     //stop default behavior
     e.preventDefault();
-    console.log('submitting wish', wish)
-    setWishes({
-      ...wish
-    })
+    //console.log('submitting wish', wish)
+    wishCreate(wish)
     //Reset wish values after submission
     setWish({
       wishName:"",

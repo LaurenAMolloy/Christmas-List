@@ -8,10 +8,13 @@ function App() {
   //Array to stores all wishes
   const[wishes, setWishes] = useState([]);
 
-  
+  const wishCreate = (wish) => {
+    setWishes(prev => [...prev, wish])
+  }
+
 return (
   <>
-  <CreateWish setWishes={setWishes}  wish={wishes} setWish={setWishes} />
+  <CreateWish setWishes={setWishes}  wish={wishes} wishCreate={wishCreate}  />
   <WishList wishes={wishes}  />
   </>
 )
