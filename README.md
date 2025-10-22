@@ -47,7 +47,7 @@
 Here’s how you can get started using this app —  
 🚀 Let’s go!
 
-1. **Clone the repository**
+##Clone the repository
    ```bash
    git clone git@github.com:LaurenAMolloy/Christmas-List.git cd Christmas-List
 + Open terminal on your workspace with
