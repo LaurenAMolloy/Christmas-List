@@ -50,8 +50,37 @@ Here’s how you can get started using this app —
 1. **Clone the repository**
    ```bash
    git clone git@github.com:LaurenAMolloy/Christmas-List.git cd Christmas-List
-2.  **Install dependencies**
-   ```bash
++ Open terminal on your workspace with
+
+```
+cd /home/workspace/Christmas-List
+```
+## Install
+
+Install NPM
+
+Check that you have node and npm installed
+
+To check if you have Node.js installed, run this command in your terminal:
+```
+node -v
+```
+
+To confirm that you have npm installed you can run this command in your terminal:
+
+```
+npm -v
+```
+To install all the dependences of the project, run the following command:
+
+```
+npm install
+```
+To run the application, run the following command:
+
+```
+npm run dev
+```
 
 ## Usage
 How does one go about using it?
