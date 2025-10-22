@@ -42,18 +42,16 @@
 
 
 ## Setup
-Here is how you can get started using this app
-🚀 Lets go!
-clone the repo
-`git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>`
-Install dependencies
-`npm install`
-Run the app in development
-`npm run dev`
+## 🛠️ Setup
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Here’s how you can get started using this app —  
+🚀 Let’s go!
 
+1. **Clone the repository**
+   ```bash
+   git clone git@github.com:LaurenAMolloy/Christmas-List.git cd Christmas-List
+2.  **Install dependencies**
+   ```bash
 
 ## Usage
 How does one go about using it?
