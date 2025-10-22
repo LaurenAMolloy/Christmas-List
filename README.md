@@ -23,11 +23,9 @@
 
 
 ## Technologies Used
-- React 19 - version 19.2
-- Vite - version 7.1.5
-
-
-
+- ⚛️ React 19 - version 19.2
+- ⚡ Vite - version 7.1.5
+  
 ## Features
 
 - Awesome feature 1 - Add gifts
@@ -44,7 +42,15 @@
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+Here is how you can get started using this app
+🚀 Lets go!
+clone the repo
+`git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>`
+Install dependencies
+`npm install`
+Run the app in development
+`npm run dev`
 
 Proceed to describe how to install / setup one's local environment / get started with the project.
 
