@@ -8,7 +8,6 @@
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
@@ -42,19 +41,16 @@
 
 
 ## Setup
-## 🛠️ Setup
 
 Here’s how you can get started using this app —  
 🚀 Let’s go!
 
 ##Clone the repository
-   ```bash
+```bash
    git clone git@github.com:LaurenAMolloy/Christmas-List.git cd Christmas-List
-+ Open terminal on your workspace with
-
 ```
-cd /home/workspace/Christmas-List
-```
+  + Open terminal on your workspace with cd /home/workspace/Christmas-List
+  + 
 ## Install
 
 Install NPM
@@ -82,19 +78,11 @@ To run the application, run the following command:
 npm run dev
 ```
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
 ## Project Status
 Project is: _in progress_ 
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
 - Animations for christmas theme such as snow
