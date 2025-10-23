@@ -1,16 +1,108 @@
-# React + Vite
+# Christmas List
+> This is a cute CRUD app designed to keep track of christmas gifts and wishes.
+> Live demo [_here_](https://christmas-list-jndl.onrender.com/). <!-- If you have the project hosted somewhere, include the link here. -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## General Information
+- The problem this app solves is to make the task of christmas shopping a little easier.
+- The purpose is to store a list of gifts that your loved one would like to receive.
+- I undertook this project to help me keep track of gifts to buy this christmas. 
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
+- ⚛️ React 19 - version 19.2
+- ⚡ Vite - version 7.1.5
+  
+## Features
 
-## Expanding the ESLint configuration
+- Awesome feature 1 - Add gifts
+- Awesome feature 2 - Delete gifts
+- Awesome feature 3 - Edit gifts
+- Awesome feature 4 - Sort gifts according to price
+- Awesome feature 5 - Total gifts
+- Awesome feature 6 - Tag and Filter purchased gifts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Screenshots
+![Example screenshot](./app-preview.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
+
+
+## Setup
+
+Here’s how you can get started using this app —  
+🚀 Let’s go!
+
+##Clone the repository
+```bash
+   git clone git@github.com:LaurenAMolloy/Christmas-List.git cd Christmas-List
+```
+  + Open terminal on your workspace with cd /home/workspace/Christmas-List
+  + 
+## Install
+
+Install NPM
+
+Check that you have node and npm installed
+
+To check if you have Node.js installed, run this command in your terminal:
+```
+node -v
+```
+
+To confirm that you have npm installed you can run this command in your terminal:
+
+```
+npm -v
+```
+To install all the dependences of the project, run the following command:
+
+```
+npm install
+```
+To run the application, run the following command:
+
+```
+npm run dev
+```
+
+## Project Status
+Project is: _in progress_ 
+
+
+## Room for Improvement
+
+Room for improvement:
+- Animations for christmas theme such as snow
+- Add sound to button when clicked
+
+To do:
+- Implement dash for multiple users
+
+
+## Acknowledgements
+Give credit here.
+- Many thanks to Parsity for mentoring and supporting me in my coding journey
+
+
+## Contact
+Created by [@laurenAmolloy](https://www.linkedin.com/in/lauren-a-molloy/) - feel free to contact me!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->
