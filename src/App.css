@@ -85,11 +85,14 @@ button:hover {
 }
 
 .actions>button {
-  width: 100%;
+  width: 30%;
+}
+
+button.purchased {
+  background-color: #73ba9b;
 }
 
 .actions {
   display: flex;
-  flex-direction: column;
   gap: 5px;
 }

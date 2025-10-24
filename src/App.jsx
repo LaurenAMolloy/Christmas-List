@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import WishList from './Components/WishList'
 import CreateWish from './Components/CreateWish'
 import axios from 'axios'
+import {nanoid}  from 'nanoid'
 import './App.css'
 
 function App() {
-  //Array to stores all wishes
+  //Set state to empty Array to stores all wishes objects
   const[wishes, setWishes] = useState([]);
  
   //Fetch wishes from db onload
@@ -57,10 +58,18 @@ function App() {
     setBooks(updatedWishes);
   }
 
+  const deleteWishbyId = async (id) => {
+    await axios.delete(`http://localhost:3000/wishes/${id}`)
+    //mechanism to check if id is equal to one clicked?
+    //filter
+    const updatedWishes = wishes.filter((wish) => wish.id !== id)
+    setWishes(updatedWishes)
+  }
+
 return (
   <>
   <CreateWish setWishes={setWishes}  wish={wishes} wishCreate={wishCreate}  />
-  <WishList wishes={wishes}  />
+  <WishList wishes={wishes} editWishById={editWishById} deleteWishById={deleteWishbyId}  />
   </>
 )
 

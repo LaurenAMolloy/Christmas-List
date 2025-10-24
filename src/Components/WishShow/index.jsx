@@ -1,14 +1,20 @@
 import React from 'react'
 import { useState } from 'react'
+import { FaTrashAlt } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
-export default function WishShow( {wish, idx}) {
+
+export default function WishShow( {wish, idx, editWishById, deleteWishById}) {
     console.log(wish)
     //set state to show edit form
     const[showEdit, setShowEdit] = useState();
     //Add context here!!!
 
-    const handleDeleteClick = () => {
-        console.log("delete wish")
+    const handleDeleteClick = (id) => {
+        //console.log("deleting")
+        //console.log(id)
+        deleteWishById(id)
     }
     const handleEditClick = () => {
         console.log("edit wish")
@@ -35,9 +41,9 @@ return (
     <div className="wishShow" key={wish.id}>
         {content}
         <div className="actions">
-            <button onClick={() => handleEditClick(wish.id)} className="edit">Edit</button>
-            <button onClick={() => handleDeleteClick(wish.id)} className="delete">Delete</button>
-            <button onClick={() => handlePurchaseClick(wish.id)} className="purchased">❤️</button>
+            <button onClick={() => handleEditClick(wish.id)} className="edit"><FaEdit /></button>
+            <button onClick={() => handleDeleteClick(wish.id)} className="delete"><FaTrashAlt /></button>
+            <button onClick={() => handlePurchaseClick(wish.id)} className="purchased"><FaShoppingCart /></button>
         </div>
     </div>
   )
