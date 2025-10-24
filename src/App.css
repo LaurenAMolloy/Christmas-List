@@ -26,6 +26,7 @@ input {
   padding: 2rem 0;
   border-radius: 1rem;
   box-shadow: 2px 2px 2px 1px #2C3E50;
+  margin-bottom: 2rem;
 }
 
 .wishForm {
@@ -54,7 +55,7 @@ button {
 
 button:hover {
   background-color: #18300f;
-  transform: translateY(-8px);
+  transform: translateY(-2px);
 }
 
 .wishlistItems {
@@ -64,9 +65,11 @@ button:hover {
   flex-direction: column;
   text-align: left;
   padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px #2C3E50;
 }
 
-.wishCard {
+.wishShow {
   background-color: white;
   color: #18300f;
   width: 40%;
@@ -81,4 +84,12 @@ button:hover {
   color: #d5f2e3;
 }
 
-.delete {}
+.actions>button {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

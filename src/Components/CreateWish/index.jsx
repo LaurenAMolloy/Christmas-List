@@ -2,21 +2,22 @@ import { useState } from 'react'
 import React from 'react'
 
 function CreateWish( { wishCreate } ) {
-  //Empty Object to create wish
-  const [wish, setWish] = useState({})
+  //Empty object to set wish state
+  const [wish, setWish] = useState( {
+    wishName: "",
+    wishPrice: "",
+    wishLink: "",
+  })
 
   const handleChange = (e) => {
-    console.log(e.target.value)
     const valuetoUpdate = e.target.name
     setWish({
       ...wish,
-       [valuetoUpdate]: e.target.value
+      [valuetoUpdate]: e.target.value
     }) 
-    console.log(wish)
   }
 
   const handleSubmit = (e) => {
-    //stop default behavior
     e.preventDefault();
     //console.log('submitting wish', wish)
     wishCreate(wish)
