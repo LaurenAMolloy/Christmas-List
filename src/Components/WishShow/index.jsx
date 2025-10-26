@@ -3,21 +3,23 @@ import { useState } from 'react'
 import { FaTrashAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import EditWish from '../EditWish';
+import Button from '../Button/index.jsx';
 
 
 export default function WishShow( {wish, idx, editWishById, deleteWishById}) {
     console.log(wish)
     //set state to show edit form
-    const[showEdit, setShowEdit] = useState();
+    const[showEdit, setShowEdit] = useState(false);
     //Add context here!!!
 
     const handleDeleteClick = (id) => {
-        //console.log("deleting")
-        //console.log(id)
         deleteWishById(id)
     }
     const handleEditClick = () => {
-        console.log("edit wish")
+        //console.log("edit wish", {id})
+        //show the edit form 
+        setShowEdit(!showEdit)
     }
     
     const handlePurchaseClick = () => {
@@ -36,14 +38,17 @@ export default function WishShow( {wish, idx, editWishById, deleteWishById}) {
                             </a>
                         </p>
                     </div>
+    if(showEdit) {
+        content = <EditWish wish={wish} onSubmit={handleEditClick} />
+    }
 
 return (
     <div className="wishShow" key={wish.id}>
         {content}
         <div className="actions">
-            <button onClick={() => handleEditClick(wish.id)} className="edit"><FaEdit /></button>
-            <button onClick={() => handleDeleteClick(wish.id)} className="delete"><FaTrashAlt /></button>
-            <button onClick={() => handlePurchaseClick(wish.id)} className="purchased"><FaShoppingCart /></button>
+            <Button outline primary onClick={() => handleEditClick(wish.id)} className="edit"><FaEdit /></Button>
+            <Button outline danger onClick={() => handleDeleteClick(wish.id)} className="delete"><FaTrashAlt /></Button>
+            <Button outline success onClick={() => handlePurchaseClick(wish.id)} className="purchased"><FaShoppingCart /></Button>
         </div>
     </div>
   )

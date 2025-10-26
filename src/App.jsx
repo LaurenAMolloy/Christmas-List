@@ -3,11 +3,19 @@ import WishList from './Components/WishList'
 import CreateWish from './Components/CreateWish'
 import axios from 'axios'
 import {nanoid}  from 'nanoid'
+import  Accordion from './Components/Accordion/index.jsx'
 import './App.css'
 
 function App() {
   //Set state to empty Array to stores all wishes objects
   const[wishes, setWishes] = useState([]);
+
+  //Track expanded state 
+  //0 first open
+  //1 second item open
+  //2 third open
+  //-1 all closed
+  const[expanded, setExpanded] = useState(-1);
  
   //Fetch wishes from db onload
   const fetchWishes = async () => {
@@ -19,7 +27,7 @@ function App() {
     }
   }
 
-  // Run once on load
+  //Fetch existing wishes first render
   useEffect(() => {
     fetchWishes();
   }, []);
@@ -68,8 +76,9 @@ function App() {
 
 return (
   <>
+  <Accordion expanded={expanded} setExpanded={setExpanded}></Accordion>
   <CreateWish setWishes={setWishes}  wish={wishes} wishCreate={wishCreate}  />
-  <WishList wishes={wishes} editWishById={editWishById} deleteWishById={deleteWishbyId}  />
+  <WishList wishes={wishes} deleteWishById={deleteWishbyId} editWishById={editWishById}  />
   </>
 )
 

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
+import Button from '../Button/index.jsx'
 
 function CreateWish( { wishCreate } ) {
   //Empty object to set wish state
@@ -63,7 +64,7 @@ function CreateWish( { wishCreate } ) {
       value={wish.wishLink}
       >
       </input>
-      <button type="submit">Submit</button>
+      <Button primary rounded type="submit">Submit</Button>
     </form>
     </div>
   </>

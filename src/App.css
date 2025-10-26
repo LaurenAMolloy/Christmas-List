@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Playwrite+DE+Grund+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 
 #root {
@@ -16,6 +17,7 @@
 
 input {
   font-family: inherit;
+  background-color: #d5f2e3;
 }
 
 .form-container {
@@ -41,22 +43,6 @@ label {
   font-weight: 700;
 }
 
-button {
-  padding: .8rem .5rem;
-  width: 50%;
-  align-self: center;
-  font-family: inherit;
-  border-radius: 1rem;
-  border: none;
-  background-color: #d90429;
-  color: #d5f2e3;
-  transition: ease-in 1s;
-}
-
-button:hover {
-  background-color: #18300f;
-  transform: translateY(-2px);
-}
 
 .wishlistItems {
   border: 2px solid red;
@@ -82,6 +68,10 @@ button:hover {
 .edit {
   background-color: #18300f;
   color: #d5f2e3;
+}
+
+.actions {
+  padding-top: 1rem;
 }
 
 .actions>button {
