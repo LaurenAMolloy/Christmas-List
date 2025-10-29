@@ -15,6 +15,7 @@ export default function Button({
     outline,
     rounded,
     border,
+    grinch,
     ...rest
 }) {
 
@@ -31,7 +32,8 @@ export default function Button({
             'rounded-full': rounded,
             'bg-white border border-red-500 text-red-500 hover:bg-red-500 hover:text-white': outline && primary,
             'bg-white border border-green-500 text-green-500 hover:bg-green-500 hover:text-white': outline && success,
-            'bg-white border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white': outline && danger
+            'bg-white border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white': outline && danger,
+            'bg-green-200 text-white': grinch
     })
     );
 

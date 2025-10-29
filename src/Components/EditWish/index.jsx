@@ -1,40 +1,40 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Button from '../Button/index.jsx'
+import wishContext from '../../context/WishContext.jsx';
 
 export default function EditWish({ wish, onSubmit }) {
+  const { editWishById } = useContext(wishContext);
   console.log(wish)
-  const [newwish, setNewWish] = useState({
-    wishName: wish.wishName,
-    wishPrice: wish.wishPrice,
-    wishLink: wish.wishLink
-  })
+  
+  const [newWish, setNewWish] = useState(wish)
+  //console.log("newWish", newWish)
 
   const handleSubmit = (e) => {
     e.preventDefault();
     //On submit hides this form
-    onSubmit()
-
+    //Passes newwish to parent
+    editWishById(newWish.id, newWish)
   }
 
   //Change wish to input
   const handleChange = (e) => {
     const key = e.target.name
     const value = e.target.value
-    console.log(key, value)
+    //console.log(key, value)
     setNewWish(
-      {...wish, [key]: value }
+      {...newWish, [key]: value }
       )
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <label>Name</label>
-      <input className="input" name="wishName" value={newwish.wishName} onChange={handleChange}></input>
+      <input className="input" name="wishName" value={newWish.wishName} onChange={handleChange}></input>
       <label>Price</label>
-      <input className="input" name="wishPrice" value={newwish.wishPrice} onChange={handleChange}></input>
+      <input className="input" name="wishPrice" value={newWish.wishPrice} onChange={handleChange}></input>
       <label>Link</label>
-      <input className="input" name="wishLink" value={newwish.wishLink} onChange={handleChange}></input>
+      <input className="input" name="wishLink" value={newWish.wishLink} onChange={handleChange}></input>
       <Button primary type="submit">Save</Button>
     </form>
   )

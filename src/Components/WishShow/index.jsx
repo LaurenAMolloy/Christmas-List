@@ -1,17 +1,20 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { FaTrashAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import EditWish from '../EditWish';
 import Button from '../Button/index.jsx';
+import wishContext from '../../context/WishContext';
 
 
-export default function WishShow( {wish, idx, editWishById, deleteWishById}) {
+export default function WishShow( {wish, idx }) {
     console.log(wish)
     //set state to show edit form
     const[showEdit, setShowEdit] = useState(false);
+
     //Add context here!!!
+    const { deleteWishById } = useContext(wishContext)
 
     const handleDeleteClick = (id) => {
         deleteWishById(id)
@@ -19,7 +22,7 @@ export default function WishShow( {wish, idx, editWishById, deleteWishById}) {
     const handleEditClick = () => {
         //console.log("edit wish", {id})
         //show the edit form 
-        setShowEdit(!showEdit)
+        setShowEdit(prev => !prev)
     }
     
     const handlePurchaseClick = () => {
@@ -33,7 +36,7 @@ export default function WishShow( {wish, idx, editWishById, deleteWishById}) {
                             <span> £</span>{Number(wish.wishPrice)}
                         </p>
                         <p>Link:
-                            <a href={wish.wishLink} target="_blank" rel="noopener noreferrer">
+                            <a className="text-blue-400" href={wish.wishLink} target="_blank" rel="noopener noreferrer">
                                  View Product
                             </a>
                         </p>

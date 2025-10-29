@@ -5,30 +5,68 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 :root {
+  /* Core Palette */
+  --background: #d5f2e3;
+  /* soft mint snow */
+  --primary: #0f4d1a;
+  /* pine tree green */
+  --accent: #b3001b;
+  /* holly berry red */
+  --navy: #2c3e50;
+
+  /* Text Colors */
+  --text: #2c3e50;
+  --text-secondary: #4f5d56;
+
+  --form-bg: #ffffff;
+  --input-bg: #b7efc5;
+
+  --border: #7faa00;
+  --button-bg: #0b3a09;
+  --button-text: #b0bf1a;
+  --highlight: #c7d658;
+}
+
+body {
   font-family: "Raleway", sans-serif;
-  background-color: #d5f2e3;
-  color: #2C3E50;
+}
+
+.app-wrapper {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--background);
+  color: var(--text)
+}
+
+.grinch {
+  background-color: #052802;
+  --form-bg: #b0bf1a;
+  --input-bg: #dce2a3;
+  --border: #7faa00;
+  --button-bg: #0b3a09;
+  --button-text: #b0bf1a;
+  --highlight: #c7d658;
 }
 
 input {
   font-family: inherit;
-  background-color: #d5f2e3;
+  background-color: var(--input-bg);
+  padding: .5rem;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #73ba9b;
-  padding: 2rem 0;
+  background-color: var(--form-bg);
+  padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 2px 2px 2px 1px #2C3E50;
-  margin-bottom: 2rem;
+  box-shadow: 2px 2px 2px 1px var(--navy);
+  margin: 2rem 0;
 }
 
 .wishForm {
@@ -46,7 +84,7 @@ label {
 
 .wishlistItems {
   border: 2px solid red;
-  background-color: #d90429;
+  background-color: var(--accent);
   display: flex;
   flex-direction: column;
   text-align: left;
