@@ -24,6 +24,7 @@
 
   --form-bg: #ffffff;
   --input-bg: #b7efc5;
+  --accordion-bg: #b7efc5;
 
   --border: #7faa00;
   --button-bg: #0b3a09;
@@ -47,8 +48,8 @@ body {
   --form-bg: #b0bf1a;
   --input-bg: #dce2a3;
   --border: #7faa00;
-  --button-bg: #0b3a09;
-  --button-text: #b0bf1a;
+  --accordion-bg: #7faa00;
+  --accordion-text: #b0bf1a;
   --highlight: #c7d658;
 }
 
@@ -56,6 +57,7 @@ input {
   font-family: inherit;
   background-color: var(--input-bg);
   padding: .5rem;
+  max-width: 100%;
 }
 
 .form-container {
@@ -123,4 +125,12 @@ button.purchased {
 .actions {
   display: flex;
   gap: 5px;
+}
+
+.accordion-container {
+  background-color: var(--form-bg);
+}
+
+.accordion-label {
+  background-color: var(--accordion-bg)
 }

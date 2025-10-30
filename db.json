@@ -2,9 +2,39 @@
   "wishes": [
     {
       "id": "O93etUqsNsk6a53PMitim",
-      "wishName": "Stitch",
-      "wishPrice": "20",
+      "wishName": "Stitch Teddy",
+      "wishPrice": "30",
       "wishLink": "https://www.smythstoys.com/uk/en-gb/toys/pre-school-and-electronic-learning/fisher-price/fisher-price-little-people/fisher-price-little-people-barbie-convertible-with-figures-set/p/211920"
+    },
+    {
+      "id": "wish01",
+      "wishName": "Stitch Blanket Throw",
+      "wishPrice": "18",
+      "wishLink": "https://www.amazon.co.uk/dp/B08L8K5Q9R"
+    },
+    {
+      "id": "wish02",
+      "wishName": "Pastel LED Desk Lamp",
+      "wishPrice": "22",
+      "wishLink": "https://www.argos.co.uk/product/9374921"
+    },
+    {
+      "id": "wish03",
+      "wishName": "Cute Stationery Set",
+      "wishPrice": "12",
+      "wishLink": "https://www.paperchase.com/"
+    },
+    {
+      "id": "wish04",
+      "wishName": "Blue Plush Slippers",
+      "wishPrice": "14",
+      "wishLink": "https://www.primark.com/"
+    },
+    {
+      "id": "wish05",
+      "wishName": "Bubble Tea Gift Kit",
+      "wishPrice": "24",
+      "wishLink": "https://www.firebox.com/"
     }
   ]
 }

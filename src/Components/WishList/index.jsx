@@ -14,7 +14,7 @@ export default function WishList() {
   });
  
   return (
-    <div className="wishesContainer mb-4 py-4">
+    <div className="wishesContainer flex flex-wrap gap-2 py-5 mb-5 justify-evenly">
       {renderedWishes}
     </div>
     

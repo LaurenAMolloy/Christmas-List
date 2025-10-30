@@ -1,8 +1,10 @@
 import React from 'react'
 import  { useWish } from '../../context/WishContext.jsx'
+import { useTheme } from '../../context/ThemeContext.jsx';
 
 export default function Accordion() {
     const { expanded, setExpanded } = useWish();
+    const { theme, setTheme } = useTheme();
 
     //data to be displayed in the accordion
     const items = [
@@ -31,7 +33,7 @@ export default function Accordion() {
         return (
             <div  key={index}>
             <div 
-            className="flex justify-between p-3 bg-gray-100 border-b items-center cursor-pointer"  
+            className="accordion-label flex justify-between p-3 bg-gray-100 border-b items-center cursor-pointer"  
             onClick={() => handleOnClick(index)}
             role="button"
             aria-expanded={isExpanded}
@@ -52,7 +54,7 @@ export default function Accordion() {
     })
       
   return (
-    <div className="border-x border-t rounded">
+    <div className="accordion-container border-x border-t rounded">
         <h1 className="p-3 font-bold text-xl">FAQ</h1>
         {renderedItems}
     </div>

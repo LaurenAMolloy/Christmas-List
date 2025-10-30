@@ -15,6 +15,7 @@ export default function EditWish({ wish, onSubmit }) {
     //On submit hides this form
     //Passes newwish to parent
     editWishById(newWish.id, newWish)
+    onSubmit()
   }
 
   //Change wish to input
