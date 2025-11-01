@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import WishList from './Components/WishList'
-import CreateWish from './Components/CreateWish'
-import  Accordion from './Components/Accordion/index.jsx'
-import Toggle from './Components/ThemeToggle/index'
 import { useTheme } from './context/ThemeContext'
 import Modal from './Components/Modal'
+import NavBar from './Components/NavBar/Index';
+import { HomePage, WishPage, FAQPage } from './Pages';
 import './App.css'
 
 function App() {
@@ -18,14 +16,16 @@ function App() {
     setIsOpen(prev => prev = !prev)
   }
 
+  //Nav State
+  const[currentPage, setCurrentPage] = useState(window.location.pathname);
+
+
 return (
   <>
   <div className={`${theme ? "grinch": ""} app-wrapper`}>
   <Modal isOpen={isOpen} onClose={onClose}/>
-  <Toggle />
-  <CreateWish   />
-  <WishList   />
-  <Accordion />
+  <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+  <HomePage />
   </div>
   </>
 )

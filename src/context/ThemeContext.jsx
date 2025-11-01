@@ -1,9 +1,8 @@
 import { createContext, useContext, useState} from 'react'
 
-//Create context object
 const ThemeContext = createContext()
 
-//Create provider
+
 export const ThemeProvider = ({children}) => {
     const [theme, setTheme] = useState(false);
 
@@ -18,7 +17,7 @@ export const ThemeProvider = ({children}) => {
     )
 }
 
-//export custom hook
+
 export const useTheme = () => useContext(ThemeContext);
 
 
