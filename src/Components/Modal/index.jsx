@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import ReactDOM from 'react-dom'
-import Button from '../../Components/Button/index.jsx'
+import Button from '../Button/index.jsx'
 
 
 export default function Modal({ isOpen, onClose }) {

@@ -38,9 +38,9 @@ body {
 
 .app-wrapper {
   width: 100%;
-  padding: 2rem;
   background-color: var(--background);
-  color: var(--text)
+  color: var(--text);
+  height: 100vh;
 }
 
 .grinch {
@@ -51,6 +51,12 @@ body {
   --accordion-bg: #7faa00;
   --accordion-text: #b0bf1a;
   --highlight: #c7d658;
+}
+
+.nav {
+  background-color: var(--form-bg);
+  height: 60px;
+  padding: 1rem;
 }
 
 input {
