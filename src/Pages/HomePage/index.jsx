@@ -1,7 +1,8 @@
 import React from 'react'
+import AppInfo from '../../components/AppInfo'
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
+    <AppInfo/>
   )
 }

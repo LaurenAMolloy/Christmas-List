@@ -1,14 +1,15 @@
 import { useState } from 'react'
-import { useTheme } from './context/ThemeContext'
 import Modal from './components/Modal';
 import NavBar from './components/NavBar';
 import Route from './components/Route';
-import { HomePage, WishPage, FAQPage } from './pages';
+import { HomePage, WishPage, FAQPage, TablePage } from './pages';
 import './App.css'
 
 
 function App() {
-  const { theme } = useTheme();
+  //Access state from slice
+  const theme = useSelector((state) => state.theme)
+ 
 
   //modal state
   const[isOpen, setIsOpen] = useState(true);
@@ -26,6 +27,7 @@ return (
     <Route path="/"><HomePage /></Route>
     <Route path="/wishlist"><WishPage /></Route>
     <Route path="/faq"><FAQPage /></Route>
+    <Route path="/table"><TablePage /></Route>
   </div>
   </>
 )

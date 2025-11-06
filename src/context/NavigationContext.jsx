@@ -27,7 +27,6 @@ function NavProvider({ children }) {
 
   return (
     <NavigationContext.Provider value={{ navigate, currentPath }} >
-        {currentPath}
         {children}
     </NavigationContext.Provider>
   )

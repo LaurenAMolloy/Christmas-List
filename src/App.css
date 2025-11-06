@@ -74,7 +74,8 @@ input {
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 2px 1px var(--navy);
-  margin: 2rem 0;
+  margin: 2rem auto;
+  width: 90%;
 }
 
 .wishForm {
@@ -89,7 +90,6 @@ label {
   font-weight: 700;
 }
 
-
 .wishlistItems {
   border: 2px solid red;
   background-color: var(--accent);
@@ -99,6 +99,10 @@ label {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 2px 1px #2C3E50;
+}
+
+.wishesContainer {
+  background-color: var(--background);
 }
 
 .wishShow {
@@ -139,4 +143,23 @@ button.purchased {
 
 .accordion-label {
   background-color: var(--accordion-bg)
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  margin-top: 2rem;
+  width: 70%;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--text);
+  padding: .5rem;
 }

@@ -1,17 +1,18 @@
 import React from 'react'
-import { useTheme } from '../../context/ThemeContext.jsx'
+import { changeTheme } from '../../store/slices/themeSlice'
+import { useSelector, useDispatch } from 'react-redux'
 import Button from '../Button/index.jsx'
 
 export default function Toggle() {
-    const { themeToggle, theme } = useTheme()
+    const mode = useSelector((state) => state.theme.mode)
 
     const handleClick = () => {
-        themeToggle()
+        dispatch(changeTheme(mode === "" ? "grinch" : ""))
     }
 
   return (
     <Button primary rounded onClick={handleClick}>
-      {theme ? "Christmas Mode" : "Grinch Mode"}
+      {theme === "" ? 'grinch' : 'christmas'}
     </Button>
   )
 }
