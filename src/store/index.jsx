@@ -8,7 +8,11 @@ import themeReducer from './slices/themeSlice'
 const store = configureStore({
     //Slice of state managed by wish
     reducer: {
-        wish: wishReducer
+        theme: themeReducer
     }
 });
+
+export {
+    store
+}
 

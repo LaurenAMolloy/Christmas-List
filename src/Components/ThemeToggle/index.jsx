@@ -4,10 +4,11 @@ import { useSelector, useDispatch } from 'react-redux'
 import Button from '../Button/index.jsx'
 
 export default function Toggle() {
-    const mode = useSelector((state) => state.theme.mode)
+    const theme = useSelector((state) => state.theme.theme);
+    const dispatch = useDispatch();
 
     const handleClick = () => {
-        dispatch(changeTheme(mode === "" ? "grinch" : ""))
+        dispatch(changeTheme(theme === "" ? "grinch" : ""))
     }
 
   return (

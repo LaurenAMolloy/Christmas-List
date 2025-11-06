@@ -44,14 +44,22 @@ body {
 }
 
 .grinch {
-  background-color: #052802;
+  --background: #052802;
+  --text: #052802;
+  --text-secondary: #052802;
+  --accent: #b3001b;
+
   --form-bg: #b0bf1a;
   --input-bg: #dce2a3;
-  --border: #7faa00;
   --accordion-bg: #7faa00;
-  --accordion-text: #b0bf1a;
+  --accordion-text: #052802;
+
+  --border: #7faa00;
+  --button-bg: #18300f;
+  --button-text: #d5f2e3;
   --highlight: #c7d658;
 }
+
 
 .nav {
   background-color: var(--form-bg);
@@ -91,37 +99,43 @@ label {
 }
 
 .wishlistItems {
-  border: 2px solid red;
-  background-color: var(--accent);
+  background-color: var(--form-bg);
+  border: 2px solid var(--border);
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: 2px 2px 2px 1px #2C3E50;
+  box-shadow: 2px 2px 2px 1px var(--navy);
+  color: var(--text);
 }
 
 .wishesContainer {
   background-color: var(--background);
+  color: var(--text);
 }
 
 .wishShow {
-  background-color: white;
-  color: #18300f;
+  background-color: var(--form-bg);
+  color: var(--text);
   width: 40%;
   border-radius: 1rem;
   overflow-wrap: break-word;
   text-align: left;
   padding: 1rem;
+  border: 2px solid var(--border);
 }
 
 .edit {
-  background-color: #18300f;
-  color: #d5f2e3;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border);
 }
 
 .actions {
   padding-top: 1rem;
+  display: flex;
+  gap: 5px;
 }
 
 .actions>button {
@@ -129,21 +143,22 @@ label {
 }
 
 button.purchased {
-  background-color: #73ba9b;
-}
-
-.actions {
-  display: flex;
-  gap: 5px;
+  background-color: var(--highlight);
+  color: var(--navy);
 }
 
 .accordion-container {
   background-color: var(--form-bg);
+  border-radius: 0.75rem;
 }
 
 .accordion-label {
-  background-color: var(--accordion-bg)
+  background-color: var(--accordion-bg);
+  color: var(--accordion-text, var(--text));
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
+
 
 .table-container {
   width: 100%;

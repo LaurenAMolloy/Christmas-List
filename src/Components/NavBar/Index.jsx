@@ -23,9 +23,9 @@ export default function NavBar() {
     
   return (
     <>
-        <div className="nav sticky top-0 flex flex-row justify-evenly">
+        <div className="nav sticky top-0 flex flex-row justify-between">
            <div className="logo"></div>
-           <div className="links flex flex-row">
+           <div className="links flex flex-row justify-evenly w-xs">
            {renderedLinks}
            <ThemeToggle />
            </div>

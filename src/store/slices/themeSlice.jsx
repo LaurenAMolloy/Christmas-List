@@ -4,11 +4,12 @@ import { createSlice } from '@reduxjs/toolkit';
 const themeSlice = createSlice({
     name: "theme",
     initialState : {
-        mode: "",
+        theme: "",
     },
     reducers: {
+        //action creator
         changeTheme(state, action) {
-            state.mode = action.payload;
+            state.theme = state.theme === "" ? "grinch" : "";
         }
     }
 })

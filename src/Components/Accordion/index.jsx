@@ -1,10 +1,9 @@
 import React from 'react'
 import  { useWish } from '../../context/WishContext.jsx'
-import { useTheme } from '../../context/ThemeContext.jsx';
 
 export default function Accordion() {
     const { expanded, setExpanded } = useWish();
-    const { theme, setTheme } = useTheme();
+
 
     //data to be displayed in the accordion
     const items = [

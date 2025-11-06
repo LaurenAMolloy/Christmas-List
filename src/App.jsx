@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useSelector } from 'react-redux'
 import Modal from './components/Modal';
 import NavBar from './components/NavBar';
 import Route from './components/Route';
@@ -8,7 +9,7 @@ import './App.css'
 
 function App() {
   //Access state from slice
-  const theme = useSelector((state) => state.theme)
+  const theme = useSelector((state) => state.theme.theme)
  
 
   //modal state
@@ -21,7 +22,7 @@ function App() {
 
 return (
   <>
-  <div className={`${theme ? "grinch": ""} app-wrapper`}>
+  <div className={`${theme} app-wrapper`}>
   <Modal isOpen={isOpen} onClose={onClose}/>
     <NavBar />
     <Route path="/"><HomePage /></Route>
